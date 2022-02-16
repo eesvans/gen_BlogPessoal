@@ -1,0 +1,10 @@
+.homeBG{
+    background-image: url("../../assets/img/homeBG.gif");
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: calc(100vh - 230px);
+
+    background-size: cover;
+    background-position: center;
+}
+
