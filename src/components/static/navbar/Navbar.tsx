@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
+import {Link} from 'react-router-dom';
 import './Navbar.css'
 
 function Navbar() {
@@ -7,38 +8,41 @@ function Navbar() {
         <>
             <AppBar position="static" className="backColor">
                 <Toolbar variant="dense">
-                    <Box style={{ cursor: "pointer"}}>
-                        <Typography variant="h5" color="inherit">
+                    <Box className='cursor'>
+                        <Typography variant="h5" className='neonText'>
                             BlogPessoal
                         </Typography>
                     </Box>
 
                     <Box display="flex" justifyContent="start">
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
+                        <Box mx={1} className='cursor'>
+                            <Typography variant="h6" className='neonText'>
                                 home
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
+                        <Box mx={1} className='cursor'>
+                            <Typography variant="h6" className='neonText'>
                                 postagens
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
+                        <Box mx={1} className='cursor'>
+                            <Typography variant="h6" className='neonText'>
                                 temas
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
+                        <Box mx={1} className='cursor'>
+                            <Typography variant="h6" className='neonText'>
                                 cadastrar tema
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
-                                logout
-                            </Typography>
+                        <Link to='/login' className='text-decorator-none'>
+                            <Box mx={1} className='cursor'>
+                                <Typography variant="h6" className='neonText'>
+                                    logout
+                                </Typography>
                         </Box>
+                        </Link>
+                        
                     </Box>
                 </Toolbar>
             </AppBar>
