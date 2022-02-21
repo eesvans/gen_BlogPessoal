@@ -17,8 +17,10 @@
 }
 
 .neonText2{
-    animation: pulsate 1.2s infinite alternate;
-    color: white !important;   
+    padding-top: 140px;
+    animation: pulsate 1.0s ease-in-out infinite alternate;
+    color: white !important;
+   
 }
 
 @keyframes pulsate {
