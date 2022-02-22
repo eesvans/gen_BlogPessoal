@@ -1,53 +1,6 @@
-.cadastroBG{
-    background-image: url(../../assets/img/cadastrarBG.gif);
-    background-repeat: no-repeat;
-    width: 100vh;
-    min-height: calc(100vh - 230px);
-    background-size: 100% 100%;
-    background-position: center;
+.text-decorator-none{
+    text-decoration: none;
 }
-
-.cadastroBG2{
-    background-image: url(../../assets/img/log-cadBG.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: calc(100vh - 230px);
-    background-size: cover;
-    background-position: center;
-}
-
-.neonText2{
-    padding-top: 180px;
-    animation: pulsate 1.0s ease-in-out infinite alternate;
-    color: white !important;
-   
-}
-
-@keyframes pulsate {
-    100%{
-        text-shadow:
-        0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 19px #fff,
-      0 0 40px #ff14bd,
-      0 0 80px #ff14bd,
-      0 0 90px #ff14bd,
-      0 0 100px #ff14bd,
-      0 0 150px #ff14bd;
-    }
-    0%{
-        text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 10px #ff14bd,
-      0 0 45px #ff14bd,
-      0 0 55px #ff14bd,
-      0 0 70px #ff14bd,
-      0 0 80px #ff14bd;
-    }
-}
-
 
 :root{
     --clr-neon: hsl(317 100% 54%);
@@ -56,8 +9,20 @@
     --clr-bg2: rgb(248, 26, 26);
 }
 
-.buttonCancel{
-    margin-right: 30px!important;
+.MuiPaper-outlined{
+    border: var(--clr-neon) 0.125em solid !important;
+
+    text-shadow: 
+    0 0 0.125em hsl(0, 0%, 100% /0.3),
+    0 0 0.45em var(--clr-neon) !important;
+
+    box-shadow: 
+    inset 0 0 0.5em 0 var(--clr-neon), 
+    0 0 2em 0 var(--clr-neon)!important;
+
+}
+
+.buttonDelete{
     font-weight: bold!important;
     color: white !important;
     display: inline-block !important;
@@ -75,7 +40,7 @@
     position: relative !important;
 }
 
-.buttonCancel::before{
+.buttonDelete::before{
     pointer-events: none!important;
     content: ''!important;
     position: absolute!important;
@@ -86,7 +51,7 @@
     
 }
 
-.buttonCancel::after{
+.buttonDelete::after{
     content:''!important;
     position: absolute!important;
     box-shadow: 0 0 2em 0.5em var(--clr-neon)!important;
@@ -96,20 +61,21 @@
     transition: opacity 100ms linear !important;
 }
 
-.buttonCancel:hover,
-.buttonCancel:focus{
+.buttonDelete:hover,
+.buttonDelete:focus{
     color: var(--clr-bg)!important;
     text-shadow: none!important;
     background: var(--clr-neon)!important;
     font-weight: bold!important;
 }
 
-.buttonCancel:hover::before,
-.buttonCancel:focus::before{
+.buttonDelete:hover::before,
+.buttonDelete:focus::before{
     opacity: 1!important; 
 }
 
-.buttonCancel:hover::after,
-.buttonCancel:focus::after{
+.buttonDelete:hover::after,
+.buttonDelete:focus::after{
     opacity: 1 !important;
+
 }

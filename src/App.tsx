@@ -5,8 +5,10 @@ import Footer from './components/static/footer/Footer'
 import Home from './pages/home/Home'
 import Login from './pages/login/Login'
 import CadastroUsuario from './pages/cadastroUsuario/CadastroUsuario'
-
+import ListaTema from './components/themes/themelist/ListaTema'
+import ListaPostagem from './components/posts/postlist/ListaPostagem'
 import './App.css';
+
 
 
 function App() {
@@ -26,6 +28,12 @@ function App() {
           </Route>
           <Route path='/cadastrousuario'>
             <CadastroUsuario />
+          </Route>
+          <Route path='/temas'>
+            <ListaTema />
+          </Route>
+          <Route path='/posts'>
+            <ListaPostagem />
           </Route>
         </div>
       </Switch>

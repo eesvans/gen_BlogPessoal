@@ -13,7 +13,11 @@
 }
 
 .postagens{
-    background-color: white;
+    background-image: url(../../assets/img/log-cadBG.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
 }
 
 :root{

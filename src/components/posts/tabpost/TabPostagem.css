@@ -1,0 +1,33 @@
+ .backColor{
+    background: linear-gradient(36deg, #420033 30%, #2A82C0 88%);
+}
+
+ .neonText{
+    animation: flicker 1.5s infinite 
+    alternate;
+    color: #fff;
+}
+
+.neonText3{
+    animation: pulsate 1.0s ease-in-out infinite alternate;
+    color: white !important;
+   
+}
+
+@keyframes flicker{
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #2A82C0,
+        0 0 82px #2A82C0,
+        0 0 92px #2A82C0,
+        0 0 102px #2A82C0,
+        0 0 151px #2A82C0;
+    }
+
+    20%, 24%, 55%{
+        text-shadow: none;
+    }
+}
