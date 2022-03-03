@@ -2,7 +2,7 @@
     background-image: url(../../assets/img/cadastrarBG.gif);
     background-repeat: no-repeat;
     width: 100vh;
-    min-height: calc(100vh - 230px);
+    min-height: 100vh;
     background-size: 100% 100%;
     background-position: center;
 }
@@ -10,17 +10,18 @@
 .cadastroBG2{
     background-image: url(../../assets/img/log-cadBG.jpg);
     background-repeat: no-repeat;
-    width: 100%;
-    min-height: calc(100vh - 230px);
     background-size: cover;
     background-position: center;
 }
 
 .neonText2{
-    padding-top: 180px;
     animation: pulsate 1.0s ease-in-out infinite alternate;
     color: white !important;
    
+}
+
+.textCad input, label{
+    color: white!important;
 }
 
 @keyframes pulsate {

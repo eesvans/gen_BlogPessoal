@@ -12,13 +12,16 @@ import DeletarPostagem from './components/posts/deletarPost/DeletarPostagem'
 import DeletarTema from './components/themes/deletarTheme/DeletarTema'
 import CadastroTema from './components/themes/cadastroTheme/CadastroTema'
 import './App.css';
+import { Provider } from 'react-redux'
+import store from './store/Store'
 
 function App() {
   return (
+    <Provider store={store}>
     <Router>
       <Navbar />
       <Switch>
-        <div>
+        <div style={{minHeight: "100vh"}}>
           <Route exact path='/'>
             <Login />
           </Route>
@@ -59,6 +62,7 @@ function App() {
       </Switch>
       <Footer />
     </Router>
+    </Provider>
   );
 }
 

@@ -9,6 +9,10 @@
     --clr-bg2: rgb(248, 26, 26);
 }
 
+.testecolor{
+    color: black!important;
+}
+
 .MuiPaper-outlined{
     border: var(--clr-neon) 0.125em solid !important;
 

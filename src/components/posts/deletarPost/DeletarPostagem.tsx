@@ -1,53 +1,56 @@
 import React, { useEffect, useState } from 'react'
-import {Typography, Button, Box, Card, CardActions, CardContent } from "@material-ui/core"
+import { Typography, Button, Box, Card, CardActions, CardContent } from "@material-ui/core"
 import './DeletarPostagem.css';
 import Postagem from '../../../models/Postagem';
 import { buscaId, deleteId } from '../../../services/Service';
 import { useHistory, useParams } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/TokensReducer';
 
 function DeletarPostagem() {
 
-  let history= useHistory();
-  const {id} = useParams<{id: string}>();
-  const [token, setToken] = useLocalStorage('token');
+  let history = useHistory();
+  const { id } = useParams<{ id: string }>();
+  const token = useSelector<TokenState, TokenState["tokens"]>(
+    (state) => state.tokens
+  );
   const [post, setPosts] = useState<Postagem>()
 
-  useEffect( ()=> {
-      if (token == "") {
-          alert("Você precisa estar logado")
-          history.push("/login")
-      }
+  useEffect(() => {
+    if (token == "") {
+      alert("Você precisa estar logado")
+      history.push("/login")
+    }
   }, [token])
 
-  useEffect( () => {
-      if(id !== undefined){
-          findById(id)
-      }
+  useEffect(() => {
+    if (id !== undefined) {
+      findById(id)
+    }
   }, [id])
 
-  async function findById(id: string){
-      buscaId(`/postagens/${id}`, setPosts, {
-      headers:{
-          'Authorization': token
+  async function findById(id: string) {
+    buscaId(`/postagens/${id}`, setPosts, {
+      headers: {
+        'Authorization': token
       }
-      })
+    })
   }
 
-  function sim(){
+  function sim() {
     history.push('/posts')
     deleteId(`/postagens/${id}`, {
-      headers:{
+      headers: {
         'Authorization': token
       }
     });
     alert('Postagem deletada com sucesso');
   }
 
-  function nao(){
+  function nao() {
     history.push('/posts')
   }
-   
+
   return (
     <>
       <Box m={2}>
@@ -58,7 +61,7 @@ function DeletarPostagem() {
                 Deseja deletar a Postagem:
               </Typography>
               <Typography color="textSecondary" >
-              {post?.titulo}
+                {post?.titulo}
               </Typography>
             </Box>
 
@@ -66,14 +69,14 @@ function DeletarPostagem() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-              <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
-                Sim
-              </Button>
+                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+                  Sim
+                </Button>
               </Box>
               <Box>
-              <Button onClick={nao}  variant="contained" size='large' color="secondary">
-                Não
-              </Button>
+                <Button onClick={nao} variant="contained" size='large' color="secondary">
+                  Não
+                </Button>
               </Box>
             </Box>
           </CardActions>
