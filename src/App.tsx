@@ -14,10 +14,14 @@ import CadastroTema from './components/themes/cadastroTheme/CadastroTema'
 import './App.css';
 import { Provider } from 'react-redux'
 import store from './store/Store'
+import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 
 function App() {
   return (
     <Provider store={store}>
+      <ToastContainer />
     <Router>
       <Navbar />
       <Switch>
