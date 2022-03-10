@@ -5,3 +5,39 @@
 .testeTema{
     color: black!important;
 }
+
+
+.neonText2{
+    animation: pulsate 1.0s ease-in-out infinite alternate;
+    color: white !important;
+   
+}
+
+.textCad input, label{
+    color: white!important;
+}
+
+@keyframes pulsate {
+    100%{
+        text-shadow:
+        0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #ff14bd,
+      0 0 80px #ff14bd,
+      0 0 90px #ff14bd,
+      0 0 100px #ff14bd,
+      0 0 150px #ff14bd;
+    }
+    0%{
+        text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #ff14bd,
+      0 0 45px #ff14bd,
+      0 0 55px #ff14bd,
+      0 0 70px #ff14bd,
+      0 0 80px #ff14bd;
+    }
+}
