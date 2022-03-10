@@ -16,7 +16,7 @@ code {
     monospace;
 }
 
-*{
+@font-face{
   font-family: Pixeled;
-  src: url(./assets/fonts/pixeled/Pixeled.ttf);
+  src: url(../../assets/fonts/pixeled/Pixeled.ttf)
 }
