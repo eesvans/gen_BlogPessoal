@@ -54,7 +54,7 @@ function ListaPostagem() {
           <Box m={2} >
             <Card variant="outlined">
               <CardContent>
-                <Typography color="textSecondary" gutterBottom>
+                <Typography className='testecolor'gutterBottom>
                   Postagens
                 </Typography>
                 <Typography variant="h5" component="h2">
