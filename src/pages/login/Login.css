@@ -36,6 +36,8 @@
     margin-top: 180px;
     animation: pulsate 1.0s ease-in-out infinite alternate;
     color: white !important;
+    font-family: Pixeled;
+    src: url(../../assets/fonts/pixeled/Pixeled.ttf)
    
 }
 
