@@ -7,3 +7,35 @@
    
 }
 
+.formneonText{
+    margin-top: 180px;
+    animation: pulsate 1.0s ease-in-out infinite alternate;
+    color: white !important;
+    font-family: Pixeled!important;
+    padding-bottom: 25px;
+}
+
+@keyframes pulsate {
+    100%{
+        text-shadow:
+        0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #ff14bd,
+      0 0 80px #ff14bd,
+      0 0 90px #ff14bd,
+      0 0 100px #ff14bd,
+      0 0 150px #ff14bd;
+    }
+    0%{
+        text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px #ff14bd,
+      0 0 73px #ff14bd,
+      0 0 80px #ff14bd,
+      0 0 94px #ff14bd,
+      0 0 140px #ff14bd;
+    }
+}

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Pixeled;
+    src: url(../../assets/fonts/pixeled/Pixeled.ttf);
+}
+
 .homeBG{
     background-image: url("../../assets/img/homeBG.gif");
     background-repeat: no-repeat;
@@ -9,7 +14,8 @@
 
 .titulo{
     color: white !important;
-    font-weight: bold !important;
+    font-family: Pixeled!important;
+    padding-bottom: 12px;
 }
 
 .postagens{

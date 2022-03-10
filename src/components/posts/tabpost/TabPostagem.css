@@ -1,16 +1,26 @@
- .backColor{
+@font-face {
+    font-family: Pixeled;
+    src: url(../../../assets/fonts/pixeled/Pixeled.ttf);
+}
+
+.backColor{
     background: linear-gradient(36deg, #420033 30%, #2A82C0 88%);
 }
 
- .neonText{
+ .tabneonText{
     animation: flicker 1.5s infinite 
     alternate;
     color: #fff;
+    font-family: Pixeled!important;
+    font-size:x-small!important;
+
 }
 
 .neonText3{
     animation: pulsate 1.0s ease-in-out infinite alternate;
     color: white !important;
+    font-family: Pixeled!important;
+    padding-bottom: 15px;
    
 }
 

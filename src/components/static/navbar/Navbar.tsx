@@ -36,45 +36,40 @@ function Navbar() {
     if(token !== ""){
         navbarComponent = <AppBar position="static" className="backColor">
         <Toolbar variant="dense">
-            <Box className='cursor'>
-                <Typography variant="h5" className='neonText'>
-                    BlogPessoal
-                </Typography>
-            </Box>
 
             <Box display="flex" justifyContent="start">
                 <Link to="/home" className='text-decorator-none'>
-                <Box mx={1} className='cursor'>
-                    <Typography variant="h6" className='neonText'>
-                        home
+                <Box mx={3} className='cursor'>
+                    <Typography variant="h6" className='navneonText'>
+                        Home
                     </Typography>
                 </Box>
                 </Link>
                 <Link to="/posts" className='text-decorator-none'>
-                <Box mx={1} className='cursor'>
-                    <Typography variant="h6" className='neonText'>
-                        postagens
+                <Box mx={3} className='cursor'>
+                    <Typography variant="h6" className='navneonText'>
+                        Postagens
                     </Typography>
                 </Box>
                 </Link>
                 <Link to="/temas" className='text-decorator-none'>
-                <Box mx={1} className='cursor'>
-                    <Typography variant="h6" className='neonText'>
-                        temas
+                <Box mx={3} className='cursor'>
+                    <Typography variant="h6" className='navneonText'>
+                        Temas
                     </Typography>
                 </Box>
                 </Link>
                 <Link to="/formularioTema" className='text-decorator-none'>
-                <Box mx={1} className='cursor'>
-                    <Typography variant="h6" className='neonText'>
-                        cadastrar tema
+                <Box mx={3} className='cursor'>
+                    <Typography variant="h6" className='navneonText'>
+                        Cadastrar Tema
                     </Typography>
                 </Box>
                 </Link>
                 
-                    <Box mx={1} className='cursor' onClick={goLogout}>
-                        <Typography variant="h6" className='neonText'>
-                            logout
+                    <Box mx={3} className='cursor' onClick={goLogout}>
+                        <Typography variant="h6" className='navneonText'>
+                            Logout
                         </Typography>
                     </Box>
                 
