@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Pixeled;
+    src: url(../../assets/fonts/pixeled/Pixeled.ttf);
+}
+
 .loginBG{
     background-image: url('../../assets/img/loginBG.gif');
     background-repeat: no-repeat;
@@ -36,6 +41,7 @@
     margin-top: 180px;
     animation: pulsate 1.0s ease-in-out infinite alternate;
     color: white !important;
+    font-family: Pixeled!important;
 }
 
 @keyframes pulsate {

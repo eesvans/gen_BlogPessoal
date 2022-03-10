@@ -36,8 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-*{
-  font-family: Pixeled;
-  src: url(./assets/fonts/pixeled/Pixeled.ttf);
-}
