@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Pixeled;
+    src: url(../../assets/fonts/pixeled/Pixeled.ttf);
+}
+
 .text-decorator-none{
     text-decoration: none;
 }
@@ -82,4 +87,5 @@
 
 .testecolor{
     color: black!important;
+    font-family: Pixeled!important;
 }

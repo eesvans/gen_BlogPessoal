@@ -25,12 +25,14 @@
 
 .textsLog{
     color: white;
+    font-family: Pixeled!important;
 }
 
 .textsLogin{
     font-weight: bold !important;
     animation: pulsate 1.2s infinite alternate;
-    color: white !important;   
+    color: white !important; 
+    font-family: Pixeled!important;  
 }
 
 .text-decorator-none{

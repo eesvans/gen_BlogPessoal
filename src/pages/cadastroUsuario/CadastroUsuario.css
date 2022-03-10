@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Pixeled;
+    src: url(../../assets/fonts/pixeled/Pixeled.ttf);
+}
+
 .cadastroBG{
     background-image: url(../../assets/img/cadastrarBG.gif);
     background-repeat: no-repeat;
@@ -17,11 +22,13 @@
 .neonText2{
     animation: pulsate 1.0s ease-in-out infinite alternate;
     color: white !important;
+    font-family: Pixeled!important;
    
 }
 
 .textCad input, label{
     color: white!important;
+    font-family: Pixeled!important;
 }
 
 @keyframes pulsate {
@@ -64,6 +71,7 @@
     display: inline-block !important;
     border: var(--clr-neon2) 0.125em solid !important;
     background-color: #fa3b3b!important;
+    font-family: Pixeled!important;
     
     text-shadow: 
     0 0 0.125em hsl(0, 0%, 100% /0.3),
