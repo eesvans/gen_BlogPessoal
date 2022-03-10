@@ -15,8 +15,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-@font-face{
-  font-family: Pixeled;
-  src: url(../../assets/fonts/pixeled/Pixeled.ttf)
-}

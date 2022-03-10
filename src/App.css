@@ -37,3 +37,7 @@
   }
 }
 
+*{
+  font-family: Pixeled;
+  src: url(./assets/fonts/pixeled/Pixeled.ttf);
+}
